@@ -29,7 +29,34 @@ $(document).ready(function() {
       );
 
       $('.danceSquare').append(dancer.$node);
+      window.dancers.push(dancer.$node);
+
+      if (dancerMakerFunctionName === 'makeBreakDancer' || dancerMakerFunctionName === 'makeHulaDancer') {
+        $(dancer.$node).hover(
+        function() {
+          dancer.$node.css("transform", "scale(1.5)");
+        },
+        function() {
+          dancer.$node.css("transform", "scale(1)");
+        });
+      }
+  });
+
+  $('.lineUpButton').on('click', function(event) {
+    $('.dancer:nth-child(odd)').css({left: '-5%'});
+    $('.dancer:nth-child(even)').css({left: '95%'});
+    $('.breakDancer:last-child').css({left: '44%', top: '45%'});
   });
 
 });
 
+
+// function()
+// {
+//     $(this).find("img").css("transform", "scale(1.2)");
+// },
+// // Handler for mouseleave
+// function()
+// {
+//     $(this).find("img").css("transform", "scale(1)");
+// }

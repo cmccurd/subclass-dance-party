@@ -13,7 +13,16 @@ makeHulaDancer.prototype.step = function() {
   // See http://api.jquery.com/category/effects/ for this and
   // other effects you can use on a jQuery-wrapped html tag.
   // this.$node.toggle();
+  this.$node.animate({marginTop: '-=5px'}, 'fast');
+  this.$node.animate({marginLeft: '-=5px'}, 'fast');
+  this.$node.animate({marginTop: '-=5px'}, 'fast');
+  this.$node.animate({marginLeft: '-=5px'}, 'fast');
+  this.$node.animate({marginTop: '+=5px'}, 'fast');
+  this.$node.animate({marginLeft: '+=5px'}, 'fast');
+  this.$node.animate({marginTop: '+=5px'}, 'fast');
+  this.$node.animate({marginLeft: '+=5px'}, 'fast');
 };
+
 
 makeHulaDancer.prototype.style = function () {
   // var styleSettings = {

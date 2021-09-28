@@ -37,6 +37,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 
   this.step();
   this.setPosition(top, left);
+  // this.lineUp();
 };
 
 makeDancer.prototype.step = function() {
@@ -57,5 +58,10 @@ makeDancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+// makeDancer.prototype.lineUp = function() {
+//   $('.lineUpButton').on('click', function() {
+//     this.$node.animate({left: '450px'});
+//   });
+// };
 
 

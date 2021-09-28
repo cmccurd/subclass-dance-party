@@ -9,7 +9,7 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+.title, .addDancerButton, .lineUpButton{
   padding:5px 12px;
   float:right;
 }
@@ -20,10 +20,14 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
+  background-image: url('assets/images/New_Dancer');
+  background-size: 100% 100%;
+  width: 80px;
+  height: 120px;
+  position: absolute;
+  top: -110px;
 }
 
 .breakDancer {
@@ -66,5 +70,15 @@ body, a:link, a:visited, a:active{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.djSquare {
+  background-image: url('assets/images/dj');
+  background-size: 100% 100%;
+  width: 5%;
+  height: 10%;
+  position: relative;
+  left: 39%;
+  top: -10.4%;
 
 }
