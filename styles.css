@@ -25,3 +25,46 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.breakDancer {
+  background-image: url('assets/images/output-onlinegiftools.gif');
+  background-size: 100% 100%;
+  width: 110px;
+  height: 130px;
+  position: absolute;
+  top: -110px;
+}
+.hulaDancer {
+  background-image: url('assets/images/62d822921a66e6a03d68e44c43427400.gif');
+  background-size: 100% 100%;
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top:-110px;
+}
+
+.background {
+  background-image: url('assets/images/Night_Club.png');
+  background-size: 100% 100%;
+  min-height: 80%;
+  min-width: 1024px;
+
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 32px;
+  left: 0;
+}
+
+.danceSquare {
+  width: 50%;
+  height: 34%;
+  position: relative;
+  left:18%;
+  top: 45%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+}
